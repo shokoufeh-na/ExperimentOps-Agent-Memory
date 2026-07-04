@@ -1,4 +1,4 @@
- CockroachDB × AWS Hackathon:
+💜 CockroachDB × AWS Hackathon:
 CockroachDB and AWS invite developers, engineers, and AI builders to create the next generation of agentic applications. Harness CockroachDB's distributed AI capabilities, fully managed MCP Server, agent-ready ccloud CLI, open-source Agent Skills Repo, LangChain integrations and Claude/Cursor plugins - all on AWS - to build AI agents with production-grade, persistent memory.
 
 Why Agentic Memory? Why Now?
