@@ -16,3 +16,24 @@ Retrieves similar experiments and past failures
 Uses Amazon Bedrock for reasoning and recommendations
 
 Runs serverlessly on AWS Lambda
+CockroachDB Tools Used
+Managed MCP Server — agent‑native access to CockroachDB
+
+Distributed Vector Indexing — semantic memory retrieval
+
+Agent Skills Repo — optional DB optimization skills
+
+AWS Services Used
+AWS Lambda — agent execution
+
+Amazon Bedrock — embeddings + reasoning
+
+Optional: S3 for experiment artifacts
+
+How It Works
+The agent receives a query (e.g., “find experiments similar to a CUDA OOM failure”), generates an embedding, performs semantic search using CockroachDB’s vector index, analyzes retrieved experiments, and produces recommendations. Each interaction is stored as new memory, allowing the agent to improve over time.
+
+Why This Project
+This project highlights the core idea of the hackathon:
+Agents need memory that never goes down.  
+CockroachDB provides globally distributed, always‑on persistence, while AWS provides scalable execution and model intelligence. Together, they form a foundation for real agentic systems.
