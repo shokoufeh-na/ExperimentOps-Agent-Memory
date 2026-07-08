@@ -58,6 +58,7 @@ __Repository Structure__
 ├── mcp/
 │   └── config.json
 ├── diagrams/
+├── .gitignore
 └── README.md
 ```
 
