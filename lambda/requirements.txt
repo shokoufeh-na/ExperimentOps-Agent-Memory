@@ -1,0 +1,15 @@
+# Amazon Bedrock SDK
+boto3>=1.34.0
+
+# PostgreSQL driver for CockroachDB
+# NOTE: psycopg2-binary works for local development but NOT for AWS Lambda deployment.
+# For Lambda, you must either:
+#   1. Use a Lambda layer with psycopg2 compiled for Amazon Linux 2023
+#   2. Deploy as a container image with psycopg2 installed
+#   3. Use the AWS-provided psycopg2 layer (if available in your region)
+#
+# The binary wheel here will fail in Lambda with:
+#   "cannot execute binary file: Exec format error"
+#
+# For production Lambda deployment, replace this with a Lambda layer or container.
+psycopg2-binary>=2.9.9
