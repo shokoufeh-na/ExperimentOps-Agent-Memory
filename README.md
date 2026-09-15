@@ -154,6 +154,9 @@ The Lambda execution role uses scoped IAM permissions for:
 ## Repository Structure
 
 ```text
+## Repository Structure
+
+```text
 ExperimentOps-Agent-Memory/
 ├── lambda/
 │   ├── handler.py
@@ -163,22 +166,30 @@ ExperimentOps-Agent-Memory/
 │   └── certs/
 │       └── root.crt
 │
-├── sql/
-│   ├── schema.sql
-│   └── seed_data.sql
-│
-├── tests/
-│   ├── test_embeddings.py
-│   └── test_retrieval.py
-│
 ├── mcp/
-│   └── README.md
+├── sql/
 │
-├── diagrams/
 ├── Dockerfile
-├── .env.example
+├── README.md
 ├── .gitignore
-└── README.md
+│
+├── lambda-execution-policy.json
+├── lambda-trust-policy.json
+│
+├── diagnose_connection.py
+├── inspect_url.py
+│
+├── test_agent_memory.py
+├── test_claude_sonnet_access.py
+├── test_db_connection.py
+├── test_handler_integration.py
+├── test_multi_experiment_retrieval.py
+├── test_recommendation_diagnostic.py
+├── test_recommendation_persistence.py
+├── test_recommendation_pipeline.py
+├── test_titan_embedding.py
+├── test_vector_retrieval.py
+└── test_vector_write_retrieval.py
 ```
 
 ## Local Configuration
