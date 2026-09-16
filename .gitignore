@@ -1,4 +1,16 @@
+# Python virtual environment
 .venv/
+venv/
+
+# Python cache
 __pycache__/
+*.py[cod]
+
+# macOS
 .DS_Store
+
+# Local/generated files
 response.json
+
+# Environment variables / secrets
+.env
